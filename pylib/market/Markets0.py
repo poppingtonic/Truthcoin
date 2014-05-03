@@ -15,7 +15,7 @@ Created on Fri Mar  7 14:15:52 2014
 import hashlib
 
 def Md5(X):
-    """MD5 hashes severl different objects"""
+    """MD5 hashes several different objects"""
     if type(X) is dict:
         Out = hashlib.md5( str(X).encode() ).hexdigest()
     elif type(X) is str:

@@ -46,8 +46,8 @@ def GetRewardWeights(M, Rep=-1, Alpha=.1, Verbose=False):
     #PCA, being an abstract factorization, is incapable of determining anything absolute.
     #Therefore the results of the entire procedure would theoretically be reversed if the average state of Decisions changed from TRUE to FALSE.
     #Because the average state of Decisions is a function both of randomness and the way the Decisions are worded, I quickly check to see which
-    #  of the two possible 'new' reputation vectors had more opinion in common with the original 'old' reputation.
-    #  I originally tried doing this using math but after multiple failures I chose this ad hoc way.
+    #of the two possible 'new' reputation vectors had more opinion in common with the original 'old' reputation.
+    #I originally tried doing this using math but after multiple failures I chose this ad hoc way.
     
     Set1 =  FirstScore+abs(min(FirstScore))
     Set2 =  FirstScore-max(FirstScore) 
